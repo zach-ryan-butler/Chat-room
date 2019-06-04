@@ -1,0 +1,12 @@
+header {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    background: rgb(241, 240, 240);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+header h1 {
+    text-align: center;
+    font-size: 3em;
+}
