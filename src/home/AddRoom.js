@@ -23,14 +23,14 @@ class AddRoom extends Component {
                     form.reset();
                 });
         });
-        
+
         return form;
     }
 
     renderTemplate() {
         return /*html*/`
             <form class="form">
-                <input name="form" required>
+                <input name="name" required>
                 <button>Submit</button>
             </form>
         `;

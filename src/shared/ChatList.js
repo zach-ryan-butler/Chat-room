@@ -1,20 +1,31 @@
 import Component from '../Component.js';
+import ChatItem from './ChatItem.js';
+import { chatRoomsRef } from '../services/firebase.js';
 
-class ClassList extends Component {
+class ChatList extends Component {
     
-    redner() {
+    render() {
         const dom = this.renderDOM();
 
-
+        this.props.chatData.forEach(chat => {
+            const chatItem = new ChatItem({ 
+                chat,
+                onRemove: (chatRoom => {
+                    chatRoomsRef.child(chatRoom.key).remove();
+                })
+            });
+            dom.appendChild(chatItem.render());
+        });
+        
         return dom;
     }
 
     renderTemplate() {
         return /*html*/`
-            <ul>
+            <ul> 
             </ul>
         `;
     }
 }
 
-export default ClassList;
+export default ChatList;

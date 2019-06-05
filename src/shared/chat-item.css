@@ -1,0 +1,39 @@
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+    font-size: 1.5em;
+    border: 1px solid lightgray;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 48vw;
+    animation: fadein .5s steps(30);
+    background: rgb(241, 241, 241);
+    border-radius: 10px;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: .5;
+}
+
+#remove-button {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+@keyframes fadein {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+}
