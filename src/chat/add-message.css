@@ -1,0 +1,14 @@
+.message-form {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.message-form input {
+    width: 20vw;
+    font-size: 1.2em;
+}
+
+.message-form button {
+    font-size: 1.2em;
+}
+

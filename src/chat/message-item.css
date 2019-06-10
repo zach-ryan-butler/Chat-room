@@ -1,0 +1,22 @@
+.message-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#message {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
+}
+
+#display-name {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50px;
+    /* justify-content: center; */
+}
+
+.message-item img {
+    height: 30px;
+}

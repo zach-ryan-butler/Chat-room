@@ -1,0 +1,7 @@
+.message-list {
+    height: 30vw;
+    width: 40vw;
+    overflow: auto;
+    margin: auto;
+    padding: 0px;
+}
