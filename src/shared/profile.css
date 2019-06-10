@@ -1,0 +1,17 @@
+.profile {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 89%;
+    right: 5%;
+}
+
+.profile button {
+    margin-left: 5px;
+}
+
+.profile img {
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 5px;
+}
