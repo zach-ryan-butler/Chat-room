@@ -15,7 +15,7 @@ test('render chatItem from props', assert => {
     //act
     const chatItem = new ChatItem({ chat });
     const rendered = chatItem.renderTemplate();
-    const auth.currentUser.uid = 'Bob';
+    
 
     //assert
     assert.equal(rendered, /*html*/`
