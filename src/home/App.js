@@ -22,6 +22,7 @@ class App extends Component {
         chatRoomsRef.on('value', snapshot => {
             const chatData = snapshot.val() ? Object.values(snapshot.val()) : [];
             chatList.update({ chatData });
+            
         });
 
         return dom;
